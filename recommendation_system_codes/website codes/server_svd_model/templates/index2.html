@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h3>SVD recommendation system</h3>
+  <form action="/options">
+    <div class="form-group">
+      <label for="query">Type the user you choose to recommendate:</label>
+      <input name="query" id="query" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
+{% endblock %}

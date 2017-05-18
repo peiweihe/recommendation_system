@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<p>Since you liked <b> {{ movie }} </b>, we think you will also like:</p>
+<div class="list-group">
+  {% for rec in recommendations %}
+  <a href="#" class="list-group-item">{{ rec }}</a>
+  {% endfor %}
+</div>
+{% endblock %}

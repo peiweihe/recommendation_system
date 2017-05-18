@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h3>My First Recommender</h3>
+  <form action="/recommend">
+    <div class="form-group">
+      <label for="movie">Type the name of a movie you liked:</label>
+      <input name="movie" id="movie" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
+{% endblock %}

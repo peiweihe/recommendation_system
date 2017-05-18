@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<p>{{n}} items matched  <b> {{ query }} </b>:</p>
+<div class="list-group">
+  {% for id, name in options %}
+  <a href="/recommend?item={{id}}" class="list-group-item">{{id}}</a>
+  {% endfor %}
+</div>
+{% endblock %}

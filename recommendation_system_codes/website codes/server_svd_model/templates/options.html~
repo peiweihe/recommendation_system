@@ -1,0 +1,10 @@
+<html>
+  <body>
+    {{n}} items matched {{query}}
+    <ul>
+      {% for option in options %}
+      <li />{{ option }}
+      {% endfor %}
+      </ul>
+  </body>
+</html>

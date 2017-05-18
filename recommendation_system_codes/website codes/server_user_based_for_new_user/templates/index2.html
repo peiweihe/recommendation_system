@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h3>User-based recommendation system</h3>
+  <form action="/options">
+    <div class="form-group">
+      <label for="query">Type the new user number</label>
+      <input name="query_new_user" id="query" class="form-control">
+      <label for="query">Chose a artist you like(1~20000)</label>
+      <input name="query_1" id="query" class="form-control">
+      <label for="query">How many stars do you want to evaluate this artists(1~5 stars is the highest)</label>
+      <input name="query_2" id="query" class="form-control">
+      <label for="query">Chose a artist you like(1~20000)</label>
+      <input name="query_3" id="query" class="form-control">
+      <label for="query">How many stars do you want to evaluate this artists(1~5 stars is the highest)</label>
+      <input name="query_4" id="query" class="form-control">
+      <label for="query">Chose a artist you like(1~20000):</label>
+      <input name="query_5" id="query" class="form-control">
+      <label for="query">>How many stars do you want to evaluate this artists(1~5 stars is the highest)</label>
+      <input name="query_6" id="query" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+  
+{% endblock %}
